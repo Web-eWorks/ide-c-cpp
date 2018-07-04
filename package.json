@@ -1,13 +1,13 @@
 {
   "name": "ide-c-cpp",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An Atom IDE language client for the CCLS and CQuery C/C++ language servers.",
   "keywords": [
-      "C",
-      "CPP",
-      "C++",
-      "ide"
+    "C",
+    "CPP",
+    "C++",
+    "ide"
   ],
   "repository": "https://github.com/web-eworks/ide-c-cpp",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-      "atom-languageclient": "^0.8.3"
+    "atom-languageclient": "^0.8.3"
   },
   "configSchema": {
     "languageServerCmd": {
@@ -23,8 +23,14 @@
       "title": "Language Server Command",
       "default": "ccls",
       "enum": [
-        {"value": "ccls", "description": "Use CCLS as the C/C++ language server."},
-        {"value": "cquery", "description": "Use CQuery as the C/C++ language server."}
+        {
+          "value": "ccls",
+          "description": "Use CCLS as the C/C++ language server."
+        },
+        {
+          "value": "cquery",
+          "description": "Use CQuery as the C/C++ language server."
+        }
       ],
       "description": "The language server implementation to use."
     },
@@ -39,14 +45,21 @@
       "title": "Language Server Cache Format",
       "default": "json",
       "enum": [
-        {"value": "json", "description": "Use JSON format (larger, but faster to re-index)."},
-        {"value": "binary", "description": "Use a binary representation (up to 40% smaller, but much slower to re-index)."}
+        {
+          "value": "json",
+          "description": "Use JSON format (larger, but faster to re-index)."
+        },
+        {
+          "value": "binary",
+          "description": "Use a binary representation (up to 40% smaller, but much slower to re-index)."
+        }
       ],
       "description": "The cache format to use for the language server."
     }
   },
   "enhancedScopes": [
-    "source.c", "source.cpp"
+    "source.c",
+    "source.cpp"
   ],
   "consumedServices": {
     "linter-indie": {
