@@ -1,7 +1,7 @@
 {
   "name": "ide-c-cpp",
   "main": "./lib/main",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Atom IDE language client for the CCLS and CQuery C/C++ language servers.",
   "keywords": [
     "C",
