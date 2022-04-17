@@ -34,6 +34,12 @@
       ],
       "description": "The language server implementation to use."
     },
+    "languageServerDirectory": {
+      "type": "string",
+      "title": "Language server directory",
+      "default": "",
+      "description": "The folder where is placed the language server executable."
+    },
     "cacheDirectory": {
       "type": "string",
       "title": "Language Server Cache Directory",
